@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Casa di Antonio</title>
+
+	<link rel="icon" href="img/vesuvio.png">
+
+
+	<!--           STYLES         -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tabs.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+	<script src="https://kit.fontawesome.com/babf6c6ed5.js" crossorigin="anonymous"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+
+	<!--            LOADER          -->
+	<div class="pizza">
+		<canvas id="pizza" class="loader"></canvas>
+		<h1>La Casa di Antonio</h1>
+	</div>
+
+	<!--            BACK-UP         -->
+
+
+	<header class="navbar black">
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<a href="index.html">La Casa Di Antonio</a>
+				</div>
+				<div class="nav-links">
+					<ul class="links">
+						<li><a href="index.html#home">Accueil</a></li>
+						<li ><a href="index.html#menu" >Menu</a></li>
+						<li ><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="nav-cta">
+					<a href="tel:0988419659" class="phone"> <i class="fas fa-phone-alt" aria-hidden="true"></i> 09 88 41 96 59</a>
+					<button class="cant" >Reservez</button>
+					<a href="https://www.facebook.com/La-Casa-Di-Antonio-103770127923608" target="_blank" class="fb-icon"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+				</div>
+                                <div class="burger">
+                                        <div class="line1"></div>
+                                        <div class="line2"></div>
+                                        <div class="line3"></div>
+                                </div>
+
+                                <div class="for-mobile">
+                                                <ul class="moblink">
+                                                        <li class="linko"><a href="index.html#home" >Accueil</a></li>
+                                                        <li class="linko"><a href="index.html#menu" >Menu</a></li>
+                                                        <li class="linko"><a href="index.html#contact" >Contact</a></li>
+                                                </ul>
+                                                <div class="mob-cta">
+                                                        <a href="tel:0988419659" class="phone"> <i class="fas fa-phone-alt" aria-hidden="true"></i> 09 88 41 96 59</a>
+                                                        <button class="cant" >Reservez</button>
+                                                        <a href="https://www.facebook.com/La-Casa-Di-Antonio-103770127923608" target="_blank" class="fb-icon"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                                                </div>
+                                </div>
+			</nav>
+		</div>
+	</header>
+
+        <section id="terms">
+                <div class="container">
+                        <h1>Mentions Légales</h1>
+                        <h4>1. Conditions d'utilisation</h4>
+                        <p>Les utilisateurs du site Internet https://lacasadiantonio.com (ci-après désigné « le Site ») doivent s’assurer du bon fonctionnement de leur matériel informatique et des logiciels qu’ils utilisent. La Casa Di Antonio peut à tout moment et sans préavis suspendre ou modifier l’accès à tout ou partie du Site afin d’en assurer la maintenance, sans droit à indemnisation au profit des utilisateurs. La Casa Di Antonio fait ses meilleurs efforts pour assurer une qualité optimale de fonctionnement du Site. Toutefois, La Casa Di Antonio ne peut être considéré comme responsable des dysfonctionnements du réseau Internet ou des serveurs, qui perturberaient l’accès au Site.</p>
+                        <h4>2. Informations d'activité</h4>
+                        <p>Le Site est hébergé par Ionos et édité et créé par la société SARL La Casa Di Antonio, société à responsabilité limitée au capital social de 30 000,00 €, immatriculée au Registre du Commerce et des Sociétés <!--sous le numéro 890 810 153,--> dont le siège social est situé au 8 Place de la Mairie, 91710 Vert le Petit.</p>
+                        <p>
+                                <strong>
+                                        <p>
+                                                <!--N° RCS : XXX XXX XXX-->
+                                                Email : contact@lacasadiantonio.com
+                                                <br>
+                                                Tél. : 09 88 41 96 59 (prix d’un appel local)
+                                                 <br>
+                                        </p>
+                                </strong>
+                        </p>
+                        <h4>3. Droits d'Auteur</h4>
+                        <p>Toute reproduction, représentation, adaptation ou modification partielle ou intégrale, ou transferts vers un autre site sont interdits.
+                                                Les copies ou reproductions sur tout support des informations contenues dans ce site ne peuvent être faites qu’à titre de consultation et exclusivement pour le seul usage strictement privé.
+                                                Toute reproduction et toute utilisation de copie réalisée à d’autres fins, notamment commerciales, est expressément interdite. La violation des droits réservés à La Casa Di Antonio constitue un délit de contrefaçon, lequel est sanctionné en France par l’article L335-2 du Code de la Propriété Intellectuelle et puni de trois ans d’emprisonnement et de 300.000 € d’amende.
+                            Les marques et logos figurant sur ce site sont des marques déposées par La Casa Di Antonio. Leur mention n’accorde en aucune manière une licence ou un droit d’utilisation quelconque desdites marques, qui ne peuvent donc être utilisées sans le consentement préalable et écrit du propriétaire de la marque sous peine de contrefaçon.
+                        </p>
+                </div>
+        </section>
+
+
+        	<!--           SCRIPTS         -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/loader.js"></script>
+        <script src="js/mobile.js"></script>
+
+	<script>
+		setTimeout(function() {
+		        $('.pizza').fadeOut('slow');
+		}, 1000); // <-- time in ms
+	</script>
+
+        <script>
+                $('.cant').click(function () {
+                        alert('Vous ne pouvez pas reserver à cause des mesures prises par le gouvernement au vu du COVID-19.');
+                });
+        </script>
+
+</body>
+</html>
